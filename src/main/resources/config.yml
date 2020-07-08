@@ -8,7 +8,7 @@
 
 night-skip:
   enabled: true # Skip the night if a percentage of the players in a world are sleeping
-  percentage: 50 # Percentage of players required to be sleeping to skip the night (0 - 100)
+  percentage: 10 # Percentage of players required to be sleeping to skip the night (0 - 100)
   time-rate: 70 # The amount of ticks added to the current time every tick when skipping the night
   daytime-ticks: 1200 # The time in ticks that Harbor considers day
   instant-skip: false # Instantly skip the night instead of showing the full animation
@@ -27,8 +27,8 @@ exclusions:
 # Detect AFK players and automatically remove them from the required sleeping count
 # Essentials API is used for AFK detection when available- otherwise a fallback system is used
 afk-detection:
-  enabled: true
-  timeout: 15 # Time in minutes until a player is considered AFK
+  enabled: false
+  timeout: 120 # Time in minutes until a player is considered AFK
 
 # Blacklist for worlds- Harbor will ignore these worlds
 blacklisted-worlds:
@@ -46,10 +46,10 @@ messages:
       - "&eAccelerating the night."
       - "&eRapidly approaching daytime."
     night-skipped:
-      - "&eThe night has been skipped."
-      - "&eAhhh, finally morning."
-      - "&eArghh, it's so bright outside."
-      - "&eRise and shine."
+      - "&eP*tr stinks"
+      - "&eAnime is what I need"
+      - "&eNah Arigato bad mobs"
+      - "&eNah Arigato mobs"
   actionbar:
     enabled: true
     players-sleeping: "&e[sleeping] out of [needed] players are sleeping ([more] more needed to skip)"
